@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 
     let header = $("#header");
     let intro = $("#intro");
@@ -6,25 +6,23 @@ $(function(){
     let scrollPos = $(window).scrollTop();
 
 
-    $(window).on("scroll load",function(){
+    $(window).on("scroll load", function () {
 
 
-        scrollPos=$(this).scrollTop();
+        scrollPos = $(this).scrollTop();
 
-        if(scrollPos > introH ) {
+        if (scrollPos > introH) {
 
-                header.addClass("fixed");
+            header.addClass("fixed");
 
         } else {
-                header.removeClass("fixed");
+            header.removeClass("fixed");
         }
 
     });
 
 
-
-
-    $("[data-scroll]").on("click", function(event){
+    $("[data-scroll]").on("click", function (event) {
 
         event.preventDefault();
 
@@ -36,18 +34,16 @@ $(function(){
 
         $("html, body").animate({
 
-         scrollTop:elementOffset -60
+            scrollTop: elementOffset - 60
 
         }, 450);
     });
 
 
-
-
     let nav = $("#nav")
     let navToggle = $("#navToggle")
 
-    navToggle.on("click" , function(event){
+    navToggle.on("click", function (event) {
         event.preventDefault();
 
         nav.toggleClass("show");
@@ -58,14 +54,13 @@ $(function(){
     let slider = $("#reviewsSlider");
 
     slider.slick({
-           infinite: true,
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           fade: true,
-           arrows: false,
-           dots:true
-});
-
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+    });
 
 
 });
