@@ -26,7 +26,6 @@ nav, footer, header, aside {
 html, body {
     height: 100%;
     width: 100%;
-    font-size: 100%;
     line-height: 1;
     font-size: 14px;
     -ms-text-size-adjust: 100%;
@@ -177,10 +176,9 @@ p {
     font-size: 65px;
     line-height: 1.1;
     font-weight: 700;
-    margin: 0;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 0 30px;
+    margin-bottom: 30px;
 }
 
 .intro__inner {
@@ -455,6 +453,9 @@ p {
     right: 0;
     z-index: 1;
     transform: translateY(-50%);
+}
+.my {
+width: 390px;
 }
 
 .reviews__content {
